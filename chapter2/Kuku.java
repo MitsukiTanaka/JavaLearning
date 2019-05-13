@@ -18,4 +18,4 @@ public class Kuku {
         System.out.println("10 × 10 = " + (10 * 10));
     }
 }
- 
+
