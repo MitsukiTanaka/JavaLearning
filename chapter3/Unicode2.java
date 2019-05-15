@@ -1,6 +1,5 @@
 package chapter3;
 
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -14,8 +13,7 @@ public class Unicode2 {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         try {
             String line = reader.readLine();
-            int i;
-            for (i = 0; i < line.length(); i++) {
+            for (int i = 0; i < line.length(); i++) {
                 char c = line.charAt(i);
                 System.out.println("'" + c + "'の文字コードは" + (int) c + "です");
             }
