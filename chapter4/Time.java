@@ -12,14 +12,16 @@ public class Time {
             System.out.println("現在の時刻を入力してください（「時」だけでよい）");
             String line = reader.readLine();
             int n = Integer.parseInt(line);
-            System.out.println("現在は" + n + "時です");
-            if (n >= 0 && n <= 11) {
+            if (0 <= n && n <= 23) {
+                System.out.println("現在は" + n + "時です");
+            }
+            if (0 <= n && n <= 11) {
                 System.out.println("おはようございます");
             } else if (n == 12) {
                 System.out.println("お昼です");
-            } else if (n >= 13 && n <= 18) {
+            } else if (13 <= n && n <= 18) {
                 System.out.println("こんにちは");
-            } else if (n >= 19 && n <= 23) {
+            } else if (19 <= n && n <= 23) {
                 System.out.println("こんばんは");
             } else {
                 System.out.println("時刻の範囲を超えています");
