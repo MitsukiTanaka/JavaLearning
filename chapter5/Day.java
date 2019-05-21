@@ -13,26 +13,27 @@ public class Day {
         try {
             System.out.println("0～6の数字を入力してください。対応した曜日を表示します");
             String line = reader.readLine();
-            switch (line) {
-                case "0":
+            int val = Integer.parseInt(line);
+            switch (val) {
+                case 0:
                     System.out.println("日曜日");
                     break;
-                case "1":
+                case 1:
                     System.out.println("月曜日");
                     break;
-                case "2":
+                case 2:
                     System.out.println("火曜日");
                     break;
-                case "3":
+                case 3:
                     System.out.println("水曜日");
                     break;
-                case "4":
+                case 4:
                     System.out.println("木曜日");
                     break;
-                case "5":
+                case 5:
                     System.out.println("金曜日");
                     break;
-                case "6":
+                case 6:
                     System.out.println("土曜日");
                     break;
                 default:
@@ -42,7 +43,7 @@ public class Day {
         } catch (IOException e) {
             System.out.println(e);
         } catch (NumberFormatException e) {
-            System.out.println("数字の形式が正しくありません。");
+            System.out.println("数字を入力してください。");
         }
     }
 }

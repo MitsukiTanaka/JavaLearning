@@ -1,8 +1,6 @@
 package chapter5;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 
 /**
  * Q5-8 エラーを防ぐ
@@ -23,17 +21,19 @@ public class Drink3 {
             } else {
                 c = 'c';
             }
-            if (c == '1' || c == 'a') {
-                System.out.println("オレンジジュースです");
-            } else if (c == '2' || c == 'b') {
-                System.out.println("コーヒーです");
-            } else {
-                System.out.println("どちらでもありません");
+            switch (c) {
+                case 'a':
+                    System.out.println("オレンジジュースです。");
+                    break;
+                case 'b':
+                    System.out.println("コーヒーです。");
+                    break;
+                default:
+                    System.out.println("どちらでもありません。");
+                    break;
             }
         } catch (IOException e) {
             System.out.println(e);
-        } catch (NumberFormatException e) {
-            System.out.println("数字の形式が正しくありません。");
         }
     }
 }

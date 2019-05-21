@@ -41,8 +41,6 @@ public class Drink2 {
             }
         } catch (IOException e) {
             System.out.println(e);
-        } catch (NumberFormatException e) {
-            System.out.println("数字の形式が正しくありません。");
         }
     }
 }
