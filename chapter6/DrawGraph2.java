@@ -14,13 +14,13 @@ package chapter6;
  *         }
  *     }
  * }
- * <pre/>
+ * </pre>
  */
 public class DrawGraph2 {
     public static void main(String[] args) {
         for (int i = 0; i < 10; i++) {
             System.out.print(i + ":");
-            for (int j = 0; j < i; j++) {
+            for (int j = 0; j < i; j++) {    /* i++ を j++ に修正した */
                 System.out.print("*");
             }
             System.out.println("");
