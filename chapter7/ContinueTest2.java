@@ -4,7 +4,7 @@ import java.io.*;
 
 /**
  * Q7-4 下記は何をするプログラムか。<br>
- *      また、Continue文を使わない形式に書き換える。<br>
+ * また、Continue文を使わない形式に書き換える。<br>
  * <pre>{@code
  *     public class ContinueTest {
  *     public static void main(String[] args) {
@@ -31,9 +31,7 @@ public class ContinueTest2 {
             String line;
             while ((line = reader.readLine()) != null) {
                 if (line.endsWith("{") || line.endsWith("}")) {
-                    System.out.print(line);
-                } else {
-                    /* 処理なし */
+                    System.out.println(line);
                 }
             }
         } catch (IOException e) {
