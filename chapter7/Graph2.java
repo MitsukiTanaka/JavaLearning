@@ -7,7 +7,7 @@ package chapter7;
  * public class Graph1 {
  *     public static void main(String[] args) {
  *         for (int i = 0; i < 10; i++) {
- *             for (int j = 0; j < i; j++) {
+ *             for (int j = 0; j < i * i; j++) {
  *                 System.out.print("*");
  *             }
  *             System.out.println("");
@@ -21,7 +21,7 @@ public class Graph2 {
         int i = 0;
         while (i < 10) {
             int j = 0;
-            while (j < i) {
+            while (j < i * i) {
                 System.out.print("*");
                 j++;
             }
