@@ -26,6 +26,7 @@ public class MakeHtml {
     public static void main(String[] args) {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         try {
+            String line;
             /* ルール1 */
             System.out.println("<!DOCTYPE html>");
             System.out.println("<html>");
@@ -33,19 +34,15 @@ public class MakeHtml {
             System.out.println("<title>My Page</title>");
             System.out.println("</head>");
             System.out.println("</html>");
-            String line;
             while ((line = reader.readLine()) != null) {
-
-                /* ルール3 */
                 if (line.startsWith("■")) {
+                    /* ルール3 */
                     System.out.println("<h1>" + line.substring(1) + "</h1>");
-                }
-                /* ルール4 */
-                else if (line.startsWith("●")) {
+                } else if (line.startsWith("●")) {
+                    /* ルール4 */
                     System.out.println("<h2>" + line.substring(1) + "</h2>");
-                }
-                /* ルール5 */
-                else {
+                } else {
+                    /* ルール5 */
                     System.out.println("<p>" + line + "</p>");
                 }
             }
