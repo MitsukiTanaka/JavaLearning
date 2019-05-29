@@ -6,7 +6,7 @@ package chapter8;
 public class MethodTest {
     public static void main(String[] args) {
         String[] name = getYourName();
-        System.out.println("苗字は" + name[0]);
+        System.out.println("名字は" + name[0]);
         System.out.println("名前は" + name[1]);
     }
 
