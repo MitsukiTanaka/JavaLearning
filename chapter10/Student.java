@@ -1,12 +1,16 @@
 package chapter10;
 
+/**
+ * 問題10-5 List10-5<br>
+ * 3教科の試験の合計点を学生ごとに表示するプログラム<br>
+ */
 public class Student {
     String name;    // 氏名
     int[] tens;     // 試験の点数
 
     public Student(String name, int x, int y, int z) {
         this.name = name;
-        int[] tens = {x, y, z,};
+        tens = new int[]{x, y, z,};
     }
 
     @Override
