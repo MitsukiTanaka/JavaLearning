@@ -16,7 +16,7 @@ package chapter10;
  * }</pre>
  */
 public class ProductItem {
-    char name;    // nameのあとにセミコロンを追加
+    String name;    // 型をString型に変更し、nameのあとにセミコロンを追加
     int price;    // priceのあとにセミコロンを追加
 
     @Override
