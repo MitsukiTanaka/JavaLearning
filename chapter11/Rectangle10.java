@@ -6,7 +6,7 @@ package chapter11;
  *  public class Rectangle10 {
  *     ...
  *
- *     // 2つのRectangleを比較して、等しかったらture,
+ *     // 2つのRectangleを比較して、等しかったらtrue,
  *     // 等しくなかったらfalseを返す
  *     boolean areSame(Rectangle10 a, Rectangle10 b) {
  *         if (a == null || b == null) {
@@ -36,7 +36,7 @@ public class Rectangle10 {
     boolean equals(Rectangle10 r) {
         if (r == null) {
             return false;
-        } else if (this.width == r.width && this.height == this.height) {
+        } else if (this.width == r.width && this.height == r.height) {
             return true;
         } else {
             return false;
