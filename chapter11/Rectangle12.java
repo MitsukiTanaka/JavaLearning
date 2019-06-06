@@ -48,14 +48,17 @@ public class Rectangle12 {
     }
 
     void setSize(int width, int height) {
+        /* if文
         if (width < 0) {
             width = 0;
         }
         if (height < 0) {
             height = 0;
         }
-        this.width = width;
-        this.height = height;
+         */
+        /* 三項演算子 */
+        this.width = width < 0 ? 0 : width;
+        this.height = height < 0 ? 0 : height;
     }
 
     int getArea() {
