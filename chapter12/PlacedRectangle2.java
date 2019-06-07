@@ -12,8 +12,7 @@ public class PlacedRectangle2 {
 
     /* コンストラクタ(1) 引数なし */
     PlacedRectangle2() {
-        x = 0;
-        y = 0;
+        setLocation(0,0);
         r = new Rectangle4();
     }
 
@@ -37,7 +36,7 @@ public class PlacedRectangle2 {
 
     @Override
     public String toString() {
-        return "[ (" + x + ", " + y + ")" + " [ " + r + " ]";
+        return "[ (" + x + ", " + y + ") " + r + " ]";
     }
 
     public static void main(String[] args) {
