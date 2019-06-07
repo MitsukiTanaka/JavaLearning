@@ -38,8 +38,7 @@ public class PlacedRectangle extends Rectangle4 {
 
     /* コンストラクタ(1) 引数なし */
     PlacedRectangle() {
-        x = 0;
-        y = 0;
+        setLocation(0,0);
     }
 
     /* コンストラクタ(2) 位置付き */
@@ -49,8 +48,8 @@ public class PlacedRectangle extends Rectangle4 {
 
     /* コンストラクタ(3) 位置と大きさ付き */
     PlacedRectangle(int x, int y, int width, int height) {
+        super(width,height);
         setLocation(x, y);
-        setSize(width, height);
     }
 
     /* setLocationメソッド */
@@ -61,7 +60,7 @@ public class PlacedRectangle extends Rectangle4 {
 
     @Override
     public String toString() {
-        return "[ (" + x + ", " + y + ")" + " [" + width + ", " + height + " ] ]";
+        return "[ (" + x + ", " + y + ") " + super.toString() + " ]";
     }
 
     public static void main(String[] args) {
