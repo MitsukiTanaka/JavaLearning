@@ -17,11 +17,20 @@ public class ExceptionTest5 {
     }
 
     static void method1(int x) throws Exception {
+        if (x < 0) {
+            throw new Exception();
+        }
     }
 
     static void method2(int x) throws Exception {
+        if (x > 0) {
+            throw new Exception();
+        }
     }
 
     static void method3(int x) throws Exception {
+        if (x == 0) {
+            throw new Exception();
+        }
     }
 }
