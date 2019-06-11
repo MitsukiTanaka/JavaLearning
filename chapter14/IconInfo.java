@@ -9,8 +9,8 @@ import java.awt.*;
  * ・型はintで名前はICON_32x32、値は2であるフィールド<br>
  */
 public interface IconInfo {
-    public abstract Image getIcon(int iconType);
+    Image getIcon(int iconType);
 
-    public static final int ICON_16x16 = 1;
-    public static final int ICON_32x32 = 2;
+    int ICON_16x16 = 1;
+    int ICON_32x32 = 2;
 }
