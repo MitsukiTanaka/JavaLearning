@@ -68,8 +68,9 @@ public class GcQuiz {
         ClassB e = new ClassB("ルーシー", new ClassA("ティギー"));
         e = null;
 
-        /* 参照できる値を表示する */
+        /* ガーベッジコレクションを強制的に実行 */
         System.gc();
+        /* 参照できる値を表示する */
         System.out.println("a = " + a);
         System.out.println("b = " + b);
         System.out.println("c = " + c);
