@@ -1,7 +1,7 @@
 package chapter16;
 
 /**
- * 問題16-12 以下のコードを修正する<br>
+ * 問題16-2 以下のコードを修正する<br>
  * <pre>{@code
  * class LabelPrinter {
  *     String label = "no label";
@@ -33,7 +33,7 @@ class LabelPrinter extends Thread {   /* LabelPrinterクラスをThreadクラス
     }
 
     @Override
-    public  void run() {   /* runメソッドの宣言 */
+    public void run() {   /* staticを削除 */
         while (true) {
             System.out.println(label);
             try {
