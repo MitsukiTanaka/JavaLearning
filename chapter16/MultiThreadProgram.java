@@ -28,8 +28,7 @@ package chapter16;
 public class MultiThreadProgram {
     public MultiThreadProgram(int jobcount) {
         for (int i = 0; i < jobcount; i++) {
-            JobThread jt = new JobThread(i);
-            jt.start();
+            new JobThread(i).start();
         }
     }
     public static void main(String[] args) {
