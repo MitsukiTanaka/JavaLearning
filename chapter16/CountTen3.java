@@ -7,21 +7,18 @@ package chapter16;
  */
 public class CountTen3 extends Thread {
     public static void main(String[] args) {
-        CountTen3 ct1 = new CountTen3();
-        CountTen3 ct2 = new CountTen3();
-        CountTen3 ct3 = new CountTen3();
-        ct1.start();
-        ct2.start();
-        ct3.start();
+        for (int i = 0; i < 3; i++) {
+            new CountTen3().start();
+        }
         for (int i = 0; i < 10; i++) {
-            System.out.println(Thread.currentThread().getName() + " main:i = " + i);
+            System.out.println(currentThread().getName() + " main:i = " + i);
         }
     }
 
     @Override
     public void run() {
         for (int i = 0; i < 10; i++) {
-            System.out.println(Thread.currentThread().getName() + " run:i = " + i);
+            System.out.println(getName() + " run:i = " + i);
         }
     }
 }
