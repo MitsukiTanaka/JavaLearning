@@ -28,7 +28,7 @@ public class MyStringArrayList {
     }
 
     public String get(int n) {
-        if (0 <= n && n < ar.length) {
+        if (0 <= n && n < sz) {
             return ar[n];
         } else {
             throw new IndexOutOfBoundsException();
@@ -37,5 +37,20 @@ public class MyStringArrayList {
 
     public int size() {
         return sz;
+    }
+
+    public static void main(String[] args) {
+        MyStringArrayList myList = new MyStringArrayList();
+        /* 要素の追加 */
+        myList.add("テスト1");
+        myList.add("テスト2");
+        myList.add("テスト3");
+        myList.add("テスト4");
+        myList.add("テスト5");
+
+        /* 要素の参照 */
+        for (int i = 0; i < myList.size(); i++) {
+            System.out.println(myList.get(i));
+        }
     }
 }
